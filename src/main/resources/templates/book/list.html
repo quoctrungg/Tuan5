@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>My Book List</title>
-  <th:block th:replace="layout :: link-css"></th:block>
+  <th:block th:replace="~{layout :: link-css}"></th:block>
 </head>
 <body>
-<th:block th:replace="layout :: header"></th:block>
+<th:block th:replace="~{layout :: header}"></th:block>
 <div class="container">
   <h1 th:text=${title}></h1>
   <table class="table">
@@ -33,6 +33,6 @@
   </table>
 </div>
 
-<th:block th:replace="layout :: footer"></th:block>
+<th:block th:replace="~{layout :: footer}"></th:block>
 </body>
 </html>
