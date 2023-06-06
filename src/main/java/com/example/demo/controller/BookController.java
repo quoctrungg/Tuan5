@@ -38,11 +38,11 @@ public class BookController {
         return "book/add";
     }
 
-    @PostMapping("/add")
+   /* @PostMapping("/add")
     public String addBook(@ModelAttribute("book") Book book){
         bookService.addBook(book);
         return "redirect:/books";
-    }
+    } */
 
     @PostMapping("/add")
     public String addBook(@Valid @ModelAttribute("book") Book book, BindingResult bindingResult, Model model){
